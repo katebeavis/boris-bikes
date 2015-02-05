@@ -1,4 +1,5 @@
-class Bike
+module Bike
+
 
 	def initialize
 		fix!

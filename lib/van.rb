@@ -10,6 +10,10 @@ class Van
 		end
 	end
 
+	def bikes_to_garage(bike)
+		
+	end
+
 
 
 end
