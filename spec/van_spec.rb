@@ -2,11 +2,12 @@ require 'van'
 
 describe Van do
 
-	let(:van) { Van.new }
+	let(:van) { Van.new(capacity: 30)}
 	let(:broken_bike){double :bike, broken?: true}
 	let(:working_bike){double :bike, broken?: false}
 	let(:station) {double :station, broken_bikes: [broken_bike], working_bikes: [working_bike]}
   	let(:garage) {double :garage, broken_bikes: [broken_bike], working_bikes: [working_bike]}
+  	let(:bike) {double :bike}
 
 	it 'can collect broken bikes from a docking station' do
 		# we need a station with broken bikes
@@ -40,6 +41,12 @@ describe Van do
 	   van.dock(working_bike)
 	   expect(station).to receive(:dock).with working_bike
 	   van.take_working_bikes_to(station)
+	   end
+
+	   it 'should know when it\'s full' do
+	   expect(van).not_to be_full
+	   van.capacity.times {van.dock(bike)}
+	   expect(van).to be_full
 	   end
 
 end
