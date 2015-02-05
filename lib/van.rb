@@ -17,6 +17,19 @@ class Van
 		end
 	end
 
+	def collect_working_bikes_from(garage)
+		garage.working_bikes.each do |working_bike|
+			dock(garage.release(working_bike))
+		end
+	end
+
+	def take_working_bikes_to(station)
+		bikes.each do |bike|
+			release(bike)
+			station.dock(bike)
+		end
+	end
+
 
 
 end
