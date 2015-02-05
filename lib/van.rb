@@ -10,8 +10,11 @@ class Van
 		end
 	end
 
-	def bikes_to_garage(bike)
-		
+	def take_broken_bikes_to(garage)
+		bikes.each do |bike|
+			release(bike)
+			garage.dock(bike)
+		end
 	end
 
 

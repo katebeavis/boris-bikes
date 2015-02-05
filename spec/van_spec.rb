@@ -18,9 +18,16 @@ describe Van do
 	end
 
 	it 'should take broken bikes to a garage' do
-  # we need a van with broken bikes
-  # we need a garage to take bikes to
-  expect(van).to
+		allow(garage).to receive(:dock)
+  		van.dock(broken_bike)
+  		van.take_broken_bikes_to(garage)
+  		expect(van.bikes).to be_empty
+	end
+
+	it "should give the bikes to the garage when dropping them of" do
+		van.dock(broken_bike)
+		expect(garage).to receive(:dock).with broken_bike
+		van.take_broken_bikes_to(garage)
 	end
 
 end
