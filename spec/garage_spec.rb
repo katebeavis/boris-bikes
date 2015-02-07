@@ -7,7 +7,7 @@ describe Garage do
   let(:broken_bike) {double :bike, broken?: true}
   let(:van) {double :van}
 
-  it 'should allow deafult capacity on initializing' do
+  it 'should allow default capacity on initializing' do
     expect(garage.capacity).to eq(1)
   end
 

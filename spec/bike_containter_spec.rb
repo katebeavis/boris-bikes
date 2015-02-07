@@ -1,4 +1,5 @@
 require './lib/bike_container'
+require 'bike'
 
 class ContainerHolder; include BikeContainer; end
 

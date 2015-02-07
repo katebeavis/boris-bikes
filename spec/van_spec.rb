@@ -18,13 +18,6 @@ describe Van do
 		expect(van.unavailable_bikes).to eq [broken_bike]
 	end
 
-	# it 'should take broken bikes to a garage' do
-	# 	allow(garage).to receive(:dock)
- #  		van.dock(broken_bike)
- #  		van.take_broken_bikes_to(garage)
- #  		expect(van.bikes).to be_empty
-	# end
-
 	it "should give the bikes to the garage when dropping them off" do
 		van.dock(broken_bike)
 		expect(garage).to receive(:dock).with broken_bike
