@@ -1,7 +1,7 @@
 [![Code Climate](https://codeclimate.com/github/katebeavis/boris-bikes/badges/gpa.svg)](https://codeclimate.com/github/katebeavis/boris-bikes)
 # Boris Bikes
 
-Boris Bikes was week one project of Makers Academy. It is a simulation of the Boris Bikes Rental system in London.
+Boris Bikes was week one project at Makers Academy. It is a simulation of the Boris Bikes Rental system in London.
 
 # Objectives
 
