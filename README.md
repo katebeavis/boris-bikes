@@ -20,7 +20,11 @@ $ irb
     > Dir['./lib/*.rb'].each {|file| require file }
 ```
 
-Now you are able to play around with the objects in Ruby.
+Now you are able to play around with the objects in Ruby. These are:
+- Bike
+- Docking Station
+- Van
+- Garage
 
 # To Run Tests
 ```
