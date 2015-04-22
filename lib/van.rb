@@ -1,7 +1,5 @@
 require_relative 'bike_container'
-
 class Van
-
 	include BikeContainer
 
 	def initialize(options = {})
@@ -33,7 +31,4 @@ class Van
 			station.dock(bike)
 		end
 	end
-
-
-
 end

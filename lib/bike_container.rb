@@ -1,5 +1,4 @@
 module BikeContainer
-
 	DEFAULT_CAPACITY = 10
 
 	def bikes
@@ -7,7 +6,7 @@ module BikeContainer
 	end
 
 	def capacity
-		@capacity ||= DEFAULT_CAPACITY
+	@capacity ||= DEFAULT_CAPACITY
 	end
 
 	def capacity=(value)
@@ -32,17 +31,15 @@ module BikeContainer
 		bike_count == capacity
 	end
 
-	def empty?()
+	def empty?
 		bike_count == 0
 	end
 
-
 	def available_bikes
-		bikes.reject {|bike| bike.broken? }
+		bikes.reject &:broken?
 	end
 
 	def unavailable_bikes
-		bikes.select {|bike| bike.broken? }
+		bikes.select &:broken?
 	end
-
 end

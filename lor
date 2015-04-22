@@ -1,0 +1,35 @@
+
+BikeContainer
+[32m  should accept a bike[0m
+
+Bike
+[32m  should not be broken after we create it[0m
+[32m  should be able to break[0m
+[32m  should be able to get fixed[0m
+
+DockingStation
+[32m  should allow setting default capacity on initialising[0m
+
+DockingStation
+[32m  should accept a bike[0m
+[32m  should release a working bike[0m
+[32m  should know when it's full[0m
+[32m  should not accept a bike if it's full[0m
+[32m  should provide the list of available bikes[0m
+[32m  should not release a bike that isn't there[0m
+[32m  should provide the list of unavailable bikes[0m
+
+Garage
+[32m  should allow default capacity on initializing[0m
+[32m  should dock and fix broken bikes[0m
+
+Van
+[32m  can collect broken bikes from a docking station[0m
+[32m  should give the bikes to the garage when dropping them off[0m
+[32m  should collect working bikes from the garage[0m
+[32m  should take working bikes to the docking station[0m
+[32m  should know when it's full[0m
+
+Finished in 0.0186 seconds (files took 0.09428 seconds to load)
+[32m19 examples, 0 failures[0m
+
