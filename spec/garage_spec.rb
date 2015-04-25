@@ -1,16 +1,16 @@
 require 'garage'
 
 describe Garage do
-  let(:garage) { Garage.new(capacity: 1) }
+  subject { described_class.new(capacity: 1) }
   let(:broken_bike) { double :bike, broken?: true }
   let(:van) { double :van }
 
-  it 'should allow default capacity on initializing' do
-    expect(garage.capacity).to eq(1)
+  it 'allows default capacity on initializing' do
+    expect(subject.capacity).to eq(1)
   end
 
-  it 'should dock and fix broken bikes' do
+  it 'can dock and fix broken bikes' do
     expect(broken_bike).to receive(:fix!)
-    garage.dock(broken_bike)
+    subject.dock(broken_bike)
   end
 end

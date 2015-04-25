@@ -1,20 +1,20 @@
 require 'bike'
 
 describe Bike do
-	let(:bike) { Bike.new }
+  subject { described_class.new }
 
-	it 'should not be broken after we create it' do
-		expect(bike).not_to be_broken
-	end
+  it 'is not be broken after it is created' do
+    expect(subject).not_to be_broken
+  end
 
-	it 'should be able to break' do
-		bike.break!
-		expect(bike).to be_broken
-	end
+  it 'is able to break' do
+    subject.break
+    expect(subject).to be_broken
+  end
 
-	it 'should be able to get fixed' do
-		bike.break!
-		bike.fix!
-		expect(bike).not_to be_broken
-	end
+  it 'is able to get fixed' do
+    subject.break
+    subject.fix
+    expect(subject).not_to be_broken
+  end
 end
