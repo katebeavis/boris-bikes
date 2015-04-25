@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/katebeavis/boris-bikes/badges/gpa.svg)](https://codeclimate.com/github/katebeavis/boris-bikes) [![Build Status](https://travis-ci.org/katebeavis/boris-bikes.svg?branch=master)](https://travis-ci.org/katebeavis/boris-bikes)
+[![Code Climate](https://codeclimate.com/github/katebeavis/boris-bikes/badges/gpa.svg)](https://codeclimate.com/github/katebeavis/boris-bikes) [![Code Climate](https://codeclimate.com/github/katebeavis/boris-bikes/badges/gpa.svg)](https://codeclimate.com/github/katebeavis/boris-bikes) [![Build Status](https://travis-ci.org/katebeavis/boris-bikes.svg?branch=master)](https://travis-ci.org/katebeavis/boris-bikes)
 # Boris Bikes
 
 Boris Bikes was my week one project at Makers Academy. It is a simulation of the Boris Bikes Rental system in London.
