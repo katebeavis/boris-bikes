@@ -7,12 +7,12 @@ Boris Bikes was my week one project at Makers Academy. It is a simulation of the
 
 To learn about Object-Orientated-Programming and Test-Driven-Development.
 
-# Technology
+## Technology
 - Ruby
 - Rspec
 - Git
 
-# To Run
+## To Run
 ```
 $ git clone git@github.com:katebeavis/boris-bikes.git
 $ cd boris-bikes
@@ -26,7 +26,7 @@ Now you are able to play around with the objects in Ruby. These are:
 - Van
 - Garage
 
-# To Run Tests
+## To Run Tests
 ```
 $ rspec
 ```
